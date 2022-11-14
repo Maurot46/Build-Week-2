@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
+
+* {
     font-family: 'Heebo', sans-serif;
 }
 
@@ -7,14 +8,25 @@
     background-color: red !important;
 }
 
-#ritorno{
+#ritorno {
     visibility: hidden;
 }
 
-#frase{
+#frase {
     visibility: hidden;
 }
 
-input:focus{
+.mattiacontainer {
+    margin-inline: 5%;
+}
+
+.mattiacontainer input:focus {
     box-shadow: 0px 0px 10px 5px red !important;
+}
+
+@media screen and (min-width:992px) {
+    .mattiacontainer {
+        margin-inline: 20%;
+    }
+
 }
