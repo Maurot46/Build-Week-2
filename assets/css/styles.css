@@ -1,0 +1,74 @@
+@import 'https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=VT323&display=swap';
+* {
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background-color: #ddd;
+}
+
+#seasons {
+  font-family: "VT323", monospace;
+  box-shadow: 0 0 20px black;
+}
+#seasons button {
+  border: 2px solid transparent;
+  border-left: 2px solid rgba(128, 128, 128, 0.137254902);
+  width: 25%;
+  font-size: 1.2em;
+  transition: transform 0.5s ease;
+}
+#seasons .seasonBtn:hover, #seasons .active {
+  outline: 2px solid rgba(128, 128, 128, 0.137254902);
+  transform: scale(1.1);
+}
+
+#cardWrap .cardItem {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  transition: 0.8s ease;
+}
+#cardWrap .cardItem:hover, #cardWrap .cardItem:active {
+  border-radius: 20px;
+  box-shadow: 0 0 20px black;
+}
+
+footer {
+  color: white;
+  background-color: #FF0016;
+  white-space: nowrap;
+}
+footer h3 {
+  font-family: "VT323", monospace;
+  text-decoration: underline;
+}
+footer #footerMenu {
+  display: flex;
+  justify-content: space-around;
+}
+footer #footerMenu .footerList {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer #footerMenu .footerList a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+  margin: 5px 0;
+}
+footer #social {
+  margin-bottom: 1em;
+}
+footer #social .socialIcon {
+  box-shadow: 0 0 5px black;
+}
+footer #copyright {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.4705882353);
+}/*# sourceMappingURL=styles.css.map */
