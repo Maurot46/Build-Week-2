@@ -2,3 +2,19 @@
 *{
     font-family: 'Heebo', sans-serif;
 }
+
+#check:checked {
+    background-color: red !important;
+}
+
+#ritorno{
+    visibility: hidden;
+}
+
+#frase{
+    visibility: hidden;
+}
+
+input:focus{
+    box-shadow: 0px 0px 10px 5px red !important;
+}
