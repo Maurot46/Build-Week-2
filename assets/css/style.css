@@ -1,4 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{
+
+* {
     font-family: 'Heebo', sans-serif;
+}
+
+
+#storia,
+#caratteristiche,
+#colori {
+    background-color: #f6f6f6;
+}
+
+#jordan {
+    color: red;
+    font-weight: 900;
+    text-shadow: 25px 10px gray;
+}
+
+#shop {
+    font-size: 23px;
+}
+
+#shop:hover {
+    color: black;
+}
+
+#menu {
+    font-size: 23px;
+}
+
+
+#login:hover {
+    color: black !important;
+}
+
+.offcanvas-body ul li {
+    font-size: 17px;
+}
+
+.offcanvas-body ul li a {
+    display: inline;
+    line-height: 50px;
+}
+
+.offcanvas-body ul li a:hover {
+    color: black;
+}
+
+.btn-close {
+    margin-left: 180px;
+}
+
+#hero-section {
+    padding: 0;
+}
+
+.carousel-item {
+    height: 60vh;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 320px;
+    margin-left: 18px;
+    margin-top: 65px;
+}
+
+.carousel-inner h2 {
+    font-size: 18px;
+}
+
+.carousel-inner p {
+    font-size: 13px;
+}
+
+#img1 {
+    background-image: url('../../assets/img/air-jordan-1.jpg');
+    width: 100vw;
+}
+
+#img2 {
+    background-image: url('../../assets/img/air-jordan-2.png');
+}
+
+#img3 {
+    background-image: url('../../assets/img/air-jordan-3.png');
+}
+
+#img4 {
+    background-image: url('../../assets/img/air-jordan-4.png');
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+        height: 95vh;
+    }
+
+    .carousel-item img {
+        height: 75%;
+        margin-top: 75px;
+    }
+
+    .carousel-inner h2 {
+        font-size: 30px;
+    }
+
+    .carousel-inner p {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1040px) {
+    .carousel-item img {
+        object-fit: contain;
+        margin-top: 100px;
+    }
+}
+
+footer {
+    background-color: #331c29;
+    white-space: nowrap;
+}
+
+footer h3 {
+    font-family: "VT323", monospace;
+}
+
+footer h3:hover {
+    text-decoration: underline;
+}
+
+footer #footerMenu {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer #footerMenu .footerList {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer #footerMenu .footerList a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+footer #social {
+    margin-bottom: 1em;
+}
+
+footer #social .socialIcon {
+    box-shadow: 0 0 5px black;
+}
+
+footer #copyright {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.471);
+}
+
+i {
+    color: white;
+}
+
+#button-addon2, #invia {
+    background-color: #df062f;
 }
