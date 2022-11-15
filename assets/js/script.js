@@ -27,6 +27,7 @@ function init() {
 function eventHandler() {
   btnlogin.addEventListener('click', function () {
     controllaccesso();
+    utentisalvati();
   });
 
 }
@@ -39,7 +40,18 @@ function utentisalvati() {
     })
     .then((data) => {
       datiutente = data;
+      return datiutente;
     })
+
+    var convalidaemail = datiutente.find(check=> check.email);
+    console.log(datiutente);
+    var convalidapassword = datiutente.find(check=> check.password);
+    if (convalidaemail != email.value && convalidapassword != password.value){
+      Help.innerHTML = "dati inesistenti";
+
+    }
+
+    
 }
 
 
@@ -52,12 +64,12 @@ function controllaccesso() {
       utente: email.value,
       password: password.value,
     };
-    login(data);
+    // login(data);
   }
 
 
 
-  else if (email.value == '' && password.value == '') {
+  if (email.value == '' && password.value == '') {
     email.style.border = "2px solid red";
     password.style.border = "2px solid red";
     help.innerHTML = "Compila i campi!!";
@@ -97,14 +109,14 @@ function controllaccesso() {
 
 
 
-async function login(data) {
-  let response = await fetch('http://localhost:3000/utenti', {
-    method: 'GET',
-  });
+// async function login(data) {
+//   let response = await fetch('http://localhost:3000/utenti', {
+//     method: 'GET',
+//   });
 
   
-  clearForm();
-}
+//   clearForm();
+//}
 
 
 function clearForm() {

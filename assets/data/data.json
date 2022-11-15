@@ -1,3 +1,18 @@
 {
-  "utenti": []
+  "utenti": [
+    {
+      "nome": "a",
+      "cognome": "a",
+      "email": "a",
+      "password": "a",
+      "id": 1
+    },
+    {
+      "nome": "aaa",
+      "cognome": "a",
+      "email": "a",
+      "password": "a",
+      "id": 2
+    }
+  ]
 }

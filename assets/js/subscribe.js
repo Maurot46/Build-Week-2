@@ -136,7 +136,7 @@ function controllaregistrazione() {
   }
 
   else if (checkPassword.value != password.value) {
-    checkPasswordHelp.innerHTML = "Password errata,controlla eventuali errori";
+    checkPasswordHelp.innerHTML = "Le tue password non coincidono, prova a ricontrollare";
     checkPassword.style.border = "2px solid red";
     password.value = "";
     checkPassword.value = "";
