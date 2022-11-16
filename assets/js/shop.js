@@ -46,10 +46,7 @@ document.getElementById('prezzoScarpa').innerHTML += `${prezzo}&euro;`;
 document.getElementById('immagineScarpa').innerHTML = `<img src="${immagine}" class=img-fluid>`;
 //fine--------------------------------------------------------------------------------------->
 //start--------------------------------------------------------------------------------------->
-var btns = document.querySelectorAll('.add-cart');
-btns.addEventListener('click', function() {
-  document.getElementById('carrello').innerHTML += vario;
-})
+
 
 //fine--------------------------------------------------------------------------------------->
 
