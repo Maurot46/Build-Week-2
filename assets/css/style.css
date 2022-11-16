@@ -1,14 +1,175 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-* {
+*{
     font-family: 'Heebo', sans-serif;
 }
 
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+#carrello {
+    font-size: 23px;
+}
+
+#menu {
+    font-size: 40px;
+}
+
+#carrello2 {
+    font-size: 23px;
+}
+
+#menu2 {
+    font-size: 40px;
+}
+
+#carrello, #shop, #login, #menu {
+    color: white;
+}
+#carrello:hover, #shop:hover, #login:hover, #menu:hover {
+    color: grey;
+}
+
+#carrello2, #shop2, #login2, #menu2 {
+    color: black;
+}
+#carrello2:hover, #shop2:hover, #login2:hover, #menu2:hover {
+    color: grey;
+}
+
+nav {
+    background-color: transparent !important;
+    --ease: all 500ms ease;
+    transition: var(--ease);
+}
+
+nav.fade-in {
+    background: #f8f9fa !important;
+}
+nav.nav-shop {
+    background: #262626 !important;
+}
+
+.offcanvas-body ul li {
+    font-size: 17px;
+}
+.offcanvas-body ul li a{
+    display: inline;
+    line-height: 50px;
+}
+.offcanvas-body ul li a:hover {
+    color: black;
+}
+.btn-close{
+    margin-left: 180px;
+}
+
+#hero-section{
+    padding: 0;
+}
+
+.carousel-item{
+    height: 60vh;
+}
+.carousel-item img{
+    object-fit: cover;
+    height: 320px;
+    margin-left: 18px;
+    margin-top: 65px;
+}
+
+.carousel-inner h2{font-size: 18px;}
+.carousel-inner p{font-size: 13px;}
+
+#img1 {
+    background-image: url('../../assets/img/air-jordan-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#img2 {
+    background-image: url('../../assets/img/air-jordan-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#img3 {
+    background-image: url('../../assets/img/air-jordan-3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#img4 {
+    background-image: url('../../assets/img/air-jordan-4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.hero-title{
+    background-image: url("../../assets/img/air-jordan-5.png");
+    width: 100%;
+    height: 40vh;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.hero-title img{
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 7px;
+    right: 15px;
+    z-index: 1;
+    opacity: 0.6;
+
+}
+.hero-title h1{
+    font-size: 100px;
+    line-height: 0.6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    text-shadow: 4px 6px 10px #333;
+    z-index: 9;
+    position: relative;
+}
+.hero-title strong{
+    margin-left: 30px;
+    color: #999;
+}
+.hero-title p{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.container-img img {
+    padding-top: 10px;
+    height: 100%;
+    width: 100%;
+} 
 
 #storia,
 #caratteristiche,
 #colori {
     background-color: #f6f6f6;
+}
+
+#caratt, #story {
+    margin-top: 40px;
+}
+
+#colori {
+    padding-top: 100px;
 }
 
 #jordan {
@@ -17,113 +178,9 @@
     text-shadow: 25px 10px gray;
 }
 
-#shop {
-    font-size: 23px;
-}
-
-#shop:hover {
-    color: black;
-}
-
-#menu {
-    font-size: 23px;
-}
-
-
-#login:hover {
-    color: black !important;
-}
-
-.offcanvas-body ul li {
-    font-size: 17px;
-}
-
-.offcanvas-body ul li a {
-    display: inline;
-    line-height: 50px;
-}
-
-.offcanvas-body ul li a:hover {
-    color: black;
-}
-
-.btn-close {
-    margin-left: 180px;
-}
-
-#hero-section {
-    padding: 0;
-}
-
-.carousel-item {
-    height: 60vh;
-}
-
-.carousel-item img {
-    object-fit: cover;
-    height: 320px;
-    margin-left: 18px;
-    margin-top: 65px;
-}
-
-.carousel-inner h2 {
-    font-size: 18px;
-}
-
-.carousel-inner p {
-    font-size: 13px;
-}
-
-#img1 {
-    background-image: url('../../assets/img/air-jordan-1.jpg');
-    width: 100vw;
-}
-
-#img2 {
-    background-image: url('../../assets/img/air-jordan-2.png');
-}
-
-#img3 {
-    background-image: url('../../assets/img/air-jordan-3.png');
-}
-
-#img4 {
-    background-image: url('../../assets/img/air-jordan-4.png');
-}
-
-@media (min-width: 768px) {
-    .carousel-item {
-        height: 95vh;
-    }
-
-    .carousel-item img {
-        height: 75%;
-        margin-top: 75px;
-    }
-
-    .carousel-inner h2 {
-        font-size: 30px;
-    }
-
-    .carousel-inner p {
-        font-size: 13px;
-    }
-}
-
-@media (min-width: 1040px) {
-    .carousel-item img {
-        object-fit: contain;
-        margin-top: 100px;
-    }
-}
-
 footer {
-    background-color: #331c29;
+    background-color: #111111;
     white-space: nowrap;
-}
-
-footer h3 {
-    font-family: "VT323", monospace;
 }
 
 footer h3:hover {
@@ -152,19 +209,116 @@ footer #social {
     margin-bottom: 1em;
 }
 
-footer #social .socialIcon {
-    box-shadow: 0 0 5px black;
-}
-
 footer #copyright {
+    cursor: pointer;
+    text-decoration: none;
     font-size: 13px;
     color: rgba(255, 255, 255, 0.471);
 }
-
-i {
+footer #geoLocation {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
     color: white;
 }
 
-#button-addon2, #invia {
-    background-color: #df062f;
+#social div i {
+    color: white;
+}
+
+#social div i:hover {
+    color: #ff0000;
+}
+
+#button-addon2,
+#invia {
+    background-color: #ff0000;
+}
+
+#button-addon2:hover,
+#invia:hover {
+    background-color: #c00000;
+}
+
+ul li {
+    list-style: none;
+}
+
+.card {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: #f6f6f6;
+}
+#contattaci{
+    background-image: url("../../assets/img/air-jordan-6.png");
+    width: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.progress {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    height: 5px;
+    background-color: #555555;
+}
+
+.bar {
+    width: 0;
+    display: block;
+    height: inherit;
+    background-color: #ff0000;
+}
+
+
+@media (min-width: 768px) {
+    .carousel-item {height: 95vh;}
+    .carousel-item img{
+        height: 75%;
+        margin-top: 75px;
+    }
+    .carousel-inner h2{font-size: 30px;}
+    .carousel-inner p{font-size: 13px;}
+}
+
+@media (min-width: 1040px) {
+    .carousel-item img{
+        object-fit: contain;
+        margin-top: 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-title img{
+        width: 300px;
+        height: auto;
+        right: 10%;
+    }
+    .hero-title{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: auto;
+    }
+    .hero-title h1, p{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+}
+@media (min-width: 1040px) {
+    .hero-title {
+        background-position: center;
+    }
+    .hero-title h1{
+        text-align: left;
+        width: 300px;
+        margin: 0 auto;
+    }
+    .hero-title img{right: 20%;}
+    .hero-title strong{margin-left: 70px;}
+    .hero-title p{text-align: center;}
+    .hero-title i{right: -260px;}
 }

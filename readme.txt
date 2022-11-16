@@ -6,3 +6,4 @@ Scelta:
 -scelta sezioni della pagina
 -scelta palette per il sito web
 -Assegnazione sezioni ai vari componenti del gruppo
+Giorno °2
