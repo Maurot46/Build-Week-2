@@ -4,6 +4,7 @@ var elencoHTML = document.getElementById('elenco');
 var paginaSel = [];
 var tagliaHTML = document.getElementById('taglia');
 errore = document.getElementById('errore');
+var carrello = JSON.parse(localStorage.getItem("data")) || [];
 
 
 window.addEventListener('DOMContentLoaded', init);
@@ -26,7 +27,7 @@ function printData() {
                   <h5 class="card-title">${element.nome}</h5>
                   <p class="card-text">&euro;${element.prezzo}</p>
                   <a class="btn bg-secondary text-white" href='paginaProdotto.html?nome=${element.nome}&prezzo=${element.prezzo}&immagine=${element.img}'>Visualizza</a>
-                  <button type="button" id="aggiungi" class="btn bg-success text-white">Aggiungi</button>
+                  <a class="add-cart onclick='aggiungi(${element.id})' btn bg-success text-white">Aggiungi</a>
                 </div>
               </div>`;
             })
@@ -37,14 +38,21 @@ function printData() {
 }
 //creazione singole pagine usando URLSearchparams
 var params = new URLSearchParams(document.location.search);
-console.log(params);
 let vario = params.get('nome');
 let prezzo = params.get('prezzo');
 let immagine = params.get('immagine');
 document.getElementById('nomeScarpa').innerHTML += vario;
 document.getElementById('prezzoScarpa').innerHTML += `${prezzo}&euro;`;
 document.getElementById('immagineScarpa').innerHTML = `<img src="${immagine}" class=img-fluid>`;
-//fine---------------------------------------------------------------------------------------------
+//fine--------------------------------------------------------------------------------------->
+//start--------------------------------------------------------------------------------------->
+var btns = document.querySelectorAll('.add-cart');
+btns.addEventListener('click', function() {
+  document.getElementById('carrello').innerHTML += vario;
+})
+
+//fine--------------------------------------------------------------------------------------->
+
 let scrollnav = window.scrollY
 const header = document.querySelector("nav");
 
