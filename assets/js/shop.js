@@ -4,7 +4,8 @@ var elencoHTML = document.getElementById('elenco');
 var paginaSel = [];
 var tagliaHTML = document.getElementById('taglia');
 errore = document.getElementById('errore');
-var carrello = JSON.parse(localStorage.getItem("data")) || [];
+var carrello = [];
+var errore = document.getElementById('errore');
 
 
 window.addEventListener('DOMContentLoaded', init);
@@ -19,6 +20,7 @@ function printData() {
     }).then((data) => {
         elenco = data;
         if (elenco.length > 0) {
+            errore.innerHTML = '';
             elencoHTML.innerHTML = '';
             elenco.map(function (element) {
                 elencoHTML.innerHTML += `<div class="card mx-auto" style="width: 22rem;">

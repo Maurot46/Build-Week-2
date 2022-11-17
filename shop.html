@@ -29,7 +29,7 @@
             </div>
             <a href="index.html"><img src="assets/img/logo_jordan.png" alt="logo jordan" width="65" id="logo"></a>
             <div class="d-flex flex-row align-items-center">
-                <a class="nav-link me-3 me-lg-4 fs-5" href="#" id="login2">Log-in</a>
+                <a class="nav-link me-3 me-lg-4 fs-5 text-dark" href="#" id="login" onclick="loginForm()">Log-in</a>
                 <div>
                     <a href="carrello.html"><i class="bi bi-bag" id="carrello2"></i></a>
                     <span id="count">0</span>
@@ -65,6 +65,9 @@
         <h3 class="ps-5">Scarpe Disponibili</h3>
         <div class="container">
             <div class="row" id="elenco"></div>
+        </div>
+        <div>
+            <h2 id="errore"></h2>
         </div>
 
 
@@ -106,6 +109,7 @@
         <div class="bar"></div>
     </div>
     <script src="assets/js/shop.js"></script>
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
