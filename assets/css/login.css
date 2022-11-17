@@ -1,42 +1,49 @@
-#regForm, #logForm {
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 0 10%;
-  z-index: 999;
+#regForm,
+#logForm {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 10%;
+    z-index: 999;
 }
 
-#regForm.active, #logForm.active {
-  display: block;
+#regForm.active,
+#logForm.active {
+    display: block;
 }
 
-#regBtn, #logBtn {
-  border-radius: 30px;
+#regBtn,
+#logBtn {
+    border-radius: 30px;
 }
 
-#sezReg, #sezLog {
-  text-decoration: underline;
+#sezReg,
+#sezLog {
+    text-decoration: underline;
 }
-#sezReg:hover, #sezLog:hover {
-  cursor: pointer;
-  color: #b30000;
+
+#sezReg:hover,
+#sezLog:hover {
+    cursor: pointer;
+    color: #b30000;
 }
 
 #regForm span {
-  text-decoration: underline;
+    text-decoration: underline;
 }
+
 #regForm span:hover {
-  cursor: pointer;
-  color: #b30000;
+    cursor: pointer;
+    color: #b30000;
 }
 
 @media screen and (min-width: 765px) {
-  #logForm p {
-    white-space: nowrap;
-    margin-bottom: 1em;
-  }
+    #logForm p {
+        white-space: nowrap;
+        margin-bottom: 1em;
+    }
 }

@@ -1,5 +1,4 @@
-// NAV BAR SCROLL
-
+//LA NAV BAR CAMBIA ALLO SCOLL DELLA PAGINA
 let scrollnav = window.scrollY
 const header = document.querySelector("nav");
 
@@ -30,7 +29,7 @@ window.addEventListener('scroll', function () {
 
     document.getElementById('carrello').style.color = 'black';
     document.getElementById('carrello').addEventListener("mouseover", () => {
-      document.getElementById('carrello').style.color = 'grey';
+      document.getElementById('carrello').style.color = 'grey'; 
     });
     document.getElementById('carrello').addEventListener("mouseout", () => {
       document.getElementById('carrello').style.color = 'black';
@@ -81,6 +80,7 @@ window.addEventListener('scroll', function () {
   }
 });
 
+// BARRA DI AVANZAMENTO ALLO SCROLL
 const updateBar = () => {
   const body = document.querySelector('body');
   const bar = document.querySelector('.bar');

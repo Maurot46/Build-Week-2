@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 *{
     font-family: 'Heebo', sans-serif;
+    box-sizing: border-box;
 }
 
 .navbar-toggler:focus {
@@ -178,6 +179,20 @@ nav.nav-shop {
     text-shadow: 25px 10px gray;
 }
 
+hr {
+    border-radius: 100%;
+    border: 3px solid #ff0000;
+    opacity: 1;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.spacer {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
 footer {
     background-color: #111111;
     white-space: nowrap;
@@ -244,11 +259,66 @@ ul li {
     list-style: none;
 }
 
+.jordanCollaction{
+    margin-top: 100px;
+}
+
+#schedaProdotto {
+    margin-top: 100px;
+}
+
+.modello-prezzo {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
 .card {
     margin-right: 10px;
     margin-bottom: 20px;
     background-color: #f6f6f6;
 }
+
+#cardShop {
+    margin-bottom: 40px;
+}
+
+#aggiungi {
+    background-color: #ff0000;
+}
+
+#visualizza {
+    background-color: gray;
+}
+
+#aggiungi:hover {
+    background-color: #c00000;
+}
+
+#visualizza:hover {
+    background-color: #50575e;
+}
+
+.numeri {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.numeri:hover {
+    color: #ff0000;
+    text-decoration: none;
+}  
+
+.numeri a:active {
+    color: #ff0000;
+}
+
+#aggiungiCarrello {
+    background-color: #212529;
+}
+#aggiungiCarrello:hover {
+    background-color: #303336;
+}
+
 #contattaci{
     background-image: url("../../assets/img/air-jordan-6.png");
     width: 100%;
@@ -257,10 +327,24 @@ ul li {
     background-size: cover;
 }
 
+#contactForm {
+    max-width: 750px;
+}
+
+#newsletter {
+    max-width: 750px;
+}
+
+#lineaDescrizione {
+        border: 2px solid gray;
+        opacity: 1;
+        margin-left: 100px;
+        margin-right: 100px;
+}
+
 .progress {
     position: fixed;
     bottom: 0;
-    z-index: 999;
     width: 100%;
     height: 5px;
     background-color: #555555;
@@ -322,3 +406,4 @@ ul li {
     .hero-title p{text-align: center;}
     .hero-title i{right: -260px;}
 }
+

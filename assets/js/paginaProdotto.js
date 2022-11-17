@@ -7,6 +7,8 @@ document.getElementById('nomeScarpa').innerHTML += vario;
 document.getElementById('prezzoScarpa').innerHTML += `${prezzo}&euro;`;
 document.getElementById('immagineScarpa').innerHTML = `<img src="${immagine}" class=img-fluid>`;
 
+
+//LA NAV BAR CAMBIA ALLO SCOLL DELLA PAGINA
 var scrollnav = window.scrollY
 const header = document.querySelector("nav");
 
@@ -88,6 +90,7 @@ window.addEventListener('scroll', function () {
   }
 });
 
+//BARRA DI AVANZAMENTO ALLO SCROLL
 const updateBar = () => {
   const body = document.querySelector('body');
   const bar = document.querySelector('.bar');
