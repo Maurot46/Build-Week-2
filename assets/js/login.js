@@ -24,11 +24,11 @@ var sessione = JSON.parse(sessionStorage.getItem("login"));
 if (sessione != null) {
     if (logBtnOthers == null) {
         logBtnIndex.innerHTML = `${sessione.nome}`;
-        logBtnIndex.innerHTML += `<a onclick='logout()'> &#128308;</a>`;
+        logBtnIndex.innerHTML += `<a onclick='logout()'> <i class="mt-5 bi bi-box-arrow-right ps-2 text-center" id="log-outIcon"></i></a>`;
     }
     if (logBtnIndex == null) {
         logBtnOthers.innerHTML = `${sessione.nome}`;
-        logBtnOthers.innerHTML += `<a onclick='logout()'> &#128308;</a>`;
+        logBtnOthers.innerHTML += `<a onclick='logout()'> <i class="mt-5 bi bi-box-arrow-right ps-2 text-center" id="log-outIcon"></i></a>`;
     }
 }
 
@@ -114,6 +114,7 @@ function controllaRegistrazione() {
             cognome: cognome.value,
             email: email.value,
             password: password.value,
+            carrello: []
         };
         registra(data);
     } else {
@@ -199,20 +200,27 @@ function controlloLogin() {
         }
     }
 
+    var logFlag = false;
+
     function controlloPassword() {
         if (users.find((element) => element.email == logEmail.value && element.password == logPass.value)) {
             nomeLogin = users.find((element) => element.email == logEmail.value && element.password == logPass.value);
             //sessiom storage
             sessionStorage.setItem("login", JSON.stringify(nomeLogin));
 
-            loggato();
+            logFlag = true;
+            if(logFlag == true) {
+                logFlag = false;
+                loggato();
+                location.href = 'index.html';
+            } 
+
         } else {
             logError.innerHTML = 'Password Errata, Riprova';
         }
     }
 
     function loggato() {
-        logForm.classList.remove("active");
         setTimeout(() => {
             logEmail.value = '';
             logPass.value = '';
@@ -221,11 +229,11 @@ function controlloLogin() {
         let logBtn = document.querySelector('#login2');
         if (logBtn == null) {
             logBtnIndex.innerHTML = `${nomeLogin.nome}`;
-            logBtnIndex.innerHTML += `<a onclick='logout()'> &#128308;</a>`;
+            logBtnIndex.innerHTML += `<a onclick='logout()'> <i class="bi bi-box-arrow-right ps-2 text-center" id="log-outIcon"></i></a>`;
         }
         if (logBtnIndex == null) {
             logBtn.innerHTML = `${nomeLogin.nome}`;
-            logBtn.innerHTML += `<a onclick='logout()'> &#128308;</a>`;
+            logBtn.innerHTML += `<a onclick='logout()'> <i class="bi bi-box-arrow-right ps-2 text-center" id="log-outIcon"></i></a>`;
         }
     }
 

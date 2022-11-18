@@ -1,4 +1,5 @@
 var baseUrl = 'http://localhost:3000/scarpa';
+var erroreHTML = document.getElementById('errore');
 var elenco = [];
 var elencoHTML = document.getElementById('elenco');
 var paginaSel = [];
@@ -18,6 +19,7 @@ function printData() {
     }).then((data) => {
         elenco = data;
         if (elenco.length > 0) {
+            erroreHTML.innerHTML = '';
             elencoHTML.innerHTML = '';
             elenco.map(function (element) {
                 elencoHTML.innerHTML += `<div class="card mx-4" style="width: 22rem;" id="cardShop">
@@ -26,7 +28,7 @@ function printData() {
                   <h5 class="card-title">${element.nome}</h5>
                   <p class="card-text">&euro;${element.prezzo}</p>
                   <a class="btn text-white mt-2 rounded-5" id="visualizza" href='paginaProdotto.html?nome=${element.nome}&prezzo=${element.prezzo}&immagine=${element.img}'>Visualizza</a>
-                  <a href='carrello.html' class="btn rounded-5 text-white mt-2" id="aggiungi">Aggiungi</a>
+                  <button class="btn rounded-5 text-white mt-2" id="aggiungi" onclick='addToCart(${element.id})' data-id="${element.id}" data-price="${element.prezzo}" data-title="${element.nome}">Aggiungi</button>
                 </div>
               </div>`;
             })
@@ -80,6 +82,8 @@ window.addEventListener('scroll', function () {
     document.getElementById('shop2').addEventListener("mouseout", () => {
       document.getElementById('shop2').style.color = 'white';
     });
+
+    document.getElementById('cartCounter2').style.color = 'white';
   }
   else {
     remove_class_on_scroll();
@@ -115,6 +119,8 @@ window.addEventListener('scroll', function () {
     document.getElementById('shop2').addEventListener("mouseout", () => {
       document.getElementById('shop2').style.color = 'black';
     });
+
+    document.getElementById('cartCounter2').style.color = 'black';
   }
 });
 

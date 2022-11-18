@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/logo_jordan.png" />
+    <title>Nike - Boost your game</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous'>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3'
+        crossorigin='anonymous'></script>
+    <script src="https://kit.fontawesome.com/ee5a52287d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar bg-light fixed-top">
+        <div class="container-fluid mx-lg-4">
+            <div class="d-flex flex-row align-items-center">
+                <button class="navbar-toggler border border-0 p-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span><i class="bi bi-list" id="menu2"></i></span>
+                </button>
+                <a class="nav-link ms-3 ms-lg-4 fs-5" href="shop.html" id="shop2">Shop</a>
+            </div>
+                <a href="index.html"><img src="assets/img/logo_jordan.png" alt="logo jordan" width="65" id="logo"></a>
+            <div class="d-flex flex-row align-items-center">
+                <a class="nav-link me-3 me-lg-4 fs-5" href="#" onclick="loginForm()" id="login2">Log-in</a>
+                <a href="carrello.html"><i class="bi bi-bag" id="carrello2"></i></a>
+                <div id="cartCounter2">0</div>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header mt-5 d-flex justify-content-start">
+                    <h3 class="offcanvas-title mx-3" id="offcanvasNavbarLabel">Jordan</h3>
+                    <img src="assets/img/logo_jordan.png" alt="logo jordan nero" width="30">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scarpeDisponibili">Tutte le scarpe</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!---------------------------- Login ------------------------->
+    <!-- login --><!-- login --><!-- login --><!-- login --><!-- login --><!-- login --><!-- login -->
+    <div id="logForm" class="pt-5">
+        <div class="spacer"></div>
+        <img src="assets/img/nike-logo.png" alt="nike logo" width="50px">
+        <h2>Inserisci le tue credenziali per unirti a noi</h2>
+        <p id="loginError" class="p-0 m-0 text-danger">&nbsp;</p>
+        <form class="mt-4">
+            <div class="mb-3">
+                <input id="logEmail" class="form-control p-2" placeholder="Email" type="email" />
+            </div>
+            <div class="mb-3">
+                <input id="logPass" class="form-control p-2" placeholder="Password" type="password" />
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" id="logShowPass">
+                <label class="form-check-label" for="logShowPass">Guarda la password</label>
+            </div>
+            <p class="text-center mt-3">Se non hai ancora un account <span id="sezLog" onclick="registrati()">Registrati qui.</span></p>
+            <a id="logBtn" class="btn btn-dark w-100 py-3">Login</a>
+        </form>
+    </div>
+
+    <!-- reg --><!-- reg --><!-- reg --><!-- reg --><!-- reg --><!-- reg --><!-- reg -->
+    <div id="regForm" class="pt-5">
+        <div class="spacer"></div>
+        <img src="assets/img/nike-logo.png" alt="nike logo" width="50px">
+        <h2>Ora ti faremo diventare Member Nike.</h2>
+        <form class="mt-4">
+            <div class="row">
+                <div class="mb-3 col-6">
+                    <input id="regNome" class="col-6 form-control p-2" placeholder="Nome" type="text" />
+                </div>
+                <div class="mb-3 col-6">
+                    <input id="regCognome" class="col-6 form-control p-2" placeholder="Cognome" type="text" />
+                </div>
+            </div>
+            <div class="mb-3">
+                <input id="regEmail" class="form-control p-2" placeholder="Email" type="email" />
+            </div>
+            <p id="erroreMail" class="p-0 m-0" style="color: red;"></p>
+            <div class="mb-3">
+                <input id="regPass" class="form-control p-2" placeholder="Password" type="password" />
+            </div>
+            <div class="mb-3">
+                <input id="regPass2" class="form-control p-2" placeholder="Conferma Password" type="password" />
+            </div>
+            <div class="mb-3 form-check">
+                <input class="form-check-input" type="checkbox" id="regPub">
+                <label class="form-check-label" for="regPub">Iscriviti per ricevere e-mail e aggiornamenti da Nike su
+                    prodotti, offerte e vantaggi per i member.</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="regPrivacy">
+                <label class="form-check-label" for="regPrivacy">Accetto le <span>condizioni d'uso</span> di Nike e confermo di
+                    aver letto <span>l'informativa sulla privacy</span> di Nike.</label>
+            </div>
+            <p class="text-center mt-3">Hai già un account? <span id="sezLog" onclick="loginForm()">Vai al login.</span></p>
+            <button type="button" id="regBtn" class="btn btn-dark w-100 py-3">Crea Account</button>
+        </form>
+    </div>
+
+    <script src="assets/js/carrello.js"></script>
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

@@ -52,6 +52,8 @@ window.addEventListener('scroll', function () {
     document.getElementById('shop2').addEventListener("mouseout", () => {
       document.getElementById('shop2').style.color = 'white';
     });
+
+    document.getElementById('cartCounter2').style.color = 'white';
   }
   else {
     remove_class_on_scroll();
@@ -87,6 +89,8 @@ window.addEventListener('scroll', function () {
     document.getElementById('shop2').addEventListener("mouseout", () => {
       document.getElementById('shop2').style.color = 'black';
     });
+
+    document.getElementById('cartCounter2').style.color = 'black';
   }
 });
 

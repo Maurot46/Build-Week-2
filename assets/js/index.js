@@ -42,6 +42,8 @@ window.addEventListener('scroll', function () {
     document.getElementById('shop').addEventListener("mouseout", () => {
       document.getElementById('shop').style.color = 'black';
     });
+
+    document.getElementById('cartCounter1').style.color = 'black';
   }
   else {
     remove_class_on_scroll();
@@ -77,6 +79,8 @@ window.addEventListener('scroll', function () {
     document.getElementById('shop').addEventListener("mouseout", () => {
       document.getElementById('shop').style.color = 'white';
     });
+
+    document.getElementById('cartCounter1').style.color = 'white';
   }
 });
 

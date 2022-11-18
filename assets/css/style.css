@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+#elenco, #acquisti {
+    min-height: 600px;
+}
+
 .navbar-toggler:focus {
     box-shadow: none;
 }
@@ -18,6 +22,10 @@
 
 #carrello2 {
     font-size: 23px;
+}
+
+#log-outIcon {
+    font-size: 26px;
 }
 
 #menu2 {
@@ -77,6 +85,38 @@ nav.nav-shop {
     height: 320px;
     margin-left: 18px;
     margin-top: 65px;
+}
+
+#totaleCarrello {
+    font-size: 25px;
+}
+
+#totale {
+    font-size: 25px;
+}
+
+#paypal {
+    background-color: #dfdfdf;
+    border-radius: 30px;
+    border: 1px solid #50575e;
+}
+#paypal:hover {
+    background-color: transparent;
+}
+
+#checkout {
+    font-size: 20px;
+    color: white;
+    background-color: #111111;
+    border-radius: 35px;
+    border: 1px solid #50575e;
+}
+#checkout:hover {
+    background-color: #272727;
+}
+
+#basic-addon2 {
+    cursor: pointer;
 }
 
 .carousel-inner h2{font-size: 18px;}
@@ -179,12 +219,15 @@ nav.nav-shop {
     text-shadow: 25px 10px gray;
 }
 
-hr {
-    border-radius: 100%;
-    border: 3px solid #ff0000;
-    opacity: 1;
-    margin-left: 100px;
-    margin-right: 100px;
+
+#cardShop:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+
+}
+
+#card-title-carrello {
+    font-size: 15px;
 }
 
 .spacer {
@@ -282,6 +325,17 @@ ul li {
     margin-bottom: 40px;
 }
 
+#cartCounter1 {
+    padding-left: 10px;
+    font-size: 20px;
+    color: white;
+}
+#cartCounter2 {
+    padding-left: 10px;
+    font-size: 20px;
+    color: black;
+}
+
 #aggiungi {
     background-color: #ff0000;
 }
@@ -333,13 +387,6 @@ ul li {
 
 #newsletter {
     max-width: 750px;
-}
-
-#lineaDescrizione {
-        border: 2px solid gray;
-        opacity: 1;
-        margin-left: 100px;
-        margin-right: 100px;
 }
 
 .progress {
@@ -407,3 +454,25 @@ ul li {
     .hero-title i{right: -260px;}
 }
 
+#lineaDivisoria1 {
+    border-radius: 100%;
+    background-color: #ff0000;
+    height: 7px;
+    margin: 20px 100px;
+}
+
+#lineaDivisoria2 {
+    border-radius: 100%;
+    background-color: gray;
+    height: 7px;
+    margin: 20px 100px;
+}
+
+.noselect {
+    -webkit-touch-callout: none; 
+      -webkit-user-select: none;
+       -khtml-user-select: none; 
+         -moz-user-select: none; 
+          -ms-user-select: none; 
+            user-select: none;
+}
