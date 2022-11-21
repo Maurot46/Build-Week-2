@@ -116,12 +116,12 @@ function printData2() {
         if (carrello.length > 0) {
             carrello.map(function (element) {
                 cartHistory.innerHTML += `
-                    <div class="card mx-4" style="width: 13rem; height: 20rem;" id="cardShop">
+                    <div class="card mx-4 cardShop" style="width: 13rem; height: 20rem;">
                         <div class="container-img">
                             <img src="${element.img}" class="figure-img img-fluid" style="width: 200px">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title" id="card-title-carrello">${element.nome}</h5>
+                            <h5 class="card-title card-title-carrello">${element.nome}</h5>
                             <p class="card-text">&euro;${element.prezzo}</p>
                         </div>
                     </div>`;
@@ -153,14 +153,46 @@ function tot() {
         }, 0);
 
 
-        totaleCarrello.innerHTML += `<p id="totale" class="d-inline mx-2"> &euro; ${sum.toFixed(2)}</p>`
+        totaleCarrello.innerHTML += `<p id="totale" class="text-center">Totale: &euro; ${sum.toFixed(2)}</p>`
 
     })
 }
-
 tot();
 
+var checkoutbtn = document.getElementById("checkout");
+checkoutbtn.addEventListener("click", () => {
+    window.location.href = "index.html";
 
-// local storage totale carrello
+    async function cancellaScarpa() {
 
+        alert("Grazie per l'acquisto! Il tuo ordine verrà spedito a breve");
+
+
+        let eliminaval = [];
+        function update(value) {
+            let prevData = JSON.parse(sessionStorage.getItem('login'));
+            Object.keys(value).forEach(function (val, key) {
+                prevData[val] = value[val];
+            });
+            sessionStorage.setItem('login', JSON.stringify(prevData));
+        }
+        update({ carrello: eliminaval });
+
+
+        let testparse = sessione;
+
+        console.log(testparse);
+        let response = await fetch(`http://localhost:3000/utenti/${sessione.id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(testparse),
+        });
+
+
+    }
+    cancellaScarpa();
+
+});
 

@@ -2,43 +2,43 @@
   "scarpa": [
     {
       "id": 1,
-      "nome": "Air Jordan 1 Retro Heigh OG Heirloom",
-      "prezzo": 180,
+      "nome": "Air Jordan 1 Retro Heigh OG",
+      "prezzo": 179.99,
       "descrizione": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "img": "../assets/img/scarpa1.jpg"
     },
     {
       "id": 2,
       "nome": "Air Jordan 1 Mid",
-      "prezzo": 125,
+      "prezzo": 129.99,
       "descrizione": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "img": "../assets/img/scarpa2.jpg"
     },
     {
       "id": 3,
-      "nome": "Air Jordan Legacy 312 Low Chicago Red (2022)",
-      "prezzo": 139,
+      "nome": "Air Jordan Legacy 312 Low",
+      "prezzo": 139.99,
       "descrizione": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "img": "../assets/img/scarpa3.jpg"
     },
     {
       "id": 4,
       "nome": "Air Jordan 1 Low",
-      "prezzo": 110,
+      "prezzo": 119.99,
       "descrizione": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "img": "../assets/img/scarpa4.jpg"
     },
     {
       "id": 5,
       "nome": "Air Jordan 200E",
-      "prezzo": 135,
+      "prezzo": 134.99,
       "descrizione": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "img": "../assets/img/scarpa5.jpg"
     },
     {
       "id": 6,
       "nome": "Air Jordan 1 Low Flyease",
-      "prezzo": 90,
+      "prezzo": 149.99,
       "descrizione": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "img": "../assets/img/scarpa6.jpg"
     }
@@ -57,7 +57,29 @@
       "cognome": "Rossi",
       "email": "MarioRossi@gmail.com",
       "password": "123",
-      "carrello": [],
+      "carrello": [
+        {
+          "id": 1,
+          "nome": "Air Jordan 1 Retro Heigh OG",
+          "prezzo": 179.99,
+          "descrizione": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+          "img": "../assets/img/scarpa1.jpg"
+        },
+        {
+          "id": 2,
+          "nome": "Air Jordan 1 Mid",
+          "prezzo": 129.99,
+          "descrizione": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+          "img": "../assets/img/scarpa2.jpg"
+        },
+        {
+          "id": 3,
+          "nome": "Air Jordan Legacy 312 Low",
+          "prezzo": 139.99,
+          "descrizione": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+          "img": "../assets/img/scarpa3.jpg"
+        }
+      ],
       "id": 2
     },
     {

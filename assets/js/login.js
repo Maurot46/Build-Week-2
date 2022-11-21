@@ -24,11 +24,11 @@ var sessione = JSON.parse(sessionStorage.getItem("login"));
 if (sessione != null) {
     if (logBtnOthers == null) {
         logBtnIndex.innerHTML = `${sessione.nome}`;
-        logBtnIndex.innerHTML += `<a onclick='logout()'> <i class="mt-5 bi bi-box-arrow-right ps-2 text-center" id="log-outIcon"></i></a>`;
+        logBtnIndex.innerHTML += `<a onclick='logout()'> <i class="bi bi-box-arrow-right ps-2 text-center" id="log-outIcon"></i></a>`;
     }
     if (logBtnIndex == null) {
         logBtnOthers.innerHTML = `${sessione.nome}`;
-        logBtnOthers.innerHTML += `<a onclick='logout()'> <i class="mt-5 bi bi-box-arrow-right ps-2 text-center" id="log-outIcon"></i></a>`;
+        logBtnOthers.innerHTML += `<a onclick='logout()'> <i class="bi bi-box-arrow-right ps-2 text-center" id="log-outIcon"></i></a>`;
     }
 }
 
